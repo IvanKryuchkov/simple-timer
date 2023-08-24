@@ -1,0 +1,59 @@
+:root {
+  --text-base-color: #f2ecfe;
+  --border-base-color: #f9f7fd;
+}
+
+main {
+  height: 100vh;
+  background-color: #25045c;
+  color: var(--text-base-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section {
+  display: flex;
+  column-gap: 12px;
+}
+
+section .container {
+  border: 2px solid var(--border-base-color);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.withoutPeriod::-webkit-datetime-edit-ampm-field {
+  display: none;
+}
+
+input[type="time"]::-webkit-clear-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  margin: -10px;
+}
+
+.content .buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonGroup button {
+  all: unset;
+  flex: 1;
+  text-align: center;
+  background-color: transparent;
+  color: var(--text-base-color);
+  border: 1px solid var(--border-base-color);
+  box-shadow: none;
+}
